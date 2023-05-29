@@ -1,7 +1,7 @@
 asgiref==3.6.0
 build==0.10.0
 Django==4.2.1
-django-polls @ file:///Users/bohda/django-polls/dist/django-polls-0.1.tar.gz#sha256=74b2e99ed3c1b689e9d74939da0431f880c1f215bd0e177ecdd1140c9be290ba
+django-polls @ file:///Users/bohda/django-food-delivery-app/dist/django-delivery-app-0.1.tar.gz#sha256=74b2e99ed3c1b689e9d74939da0431f880c1f215bd0e177ecdd1140c9be290ba
 packaging==23.1
 Pillow==9.5.0
 pyproject_hooks==1.0.0
