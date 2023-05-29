@@ -1,0 +1,27 @@
+{% extends 'delivery_app/base.html' %}
+{% load static %}
+{% block content %}
+<form class="row" method="POST" id="order-form">
+    {% csrf_token %}
+    <!-- User Information Form -->
+    <div class="col-md-6">
+        <h2>Enter Your Information</h2>
+        {% for field in form %}
+        <div class="form-group">
+            {{ field.label_tag }}
+            {{ field }}
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary" >Submit Order</button>
+    </div>
+
+    <!-- Card Items -->
+    <div class="col-md-6">
+        <h2>Shopping Card</h2>
+        <div id="card-items-container" class="row row-cols-1 row-cols-md-2 g-4">
+        </div>
+        <h4 id="total-price"></h4>         
+    </div>
+</form>
+<script src="{% static 'delivery_app/card.js' %}"></script>
+{% endblock %}

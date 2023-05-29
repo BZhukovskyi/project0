@@ -1,0 +1,4 @@
+include LICENSE
+include README.rst
+recursive-include delivery_app/static *
+recursive-include delivery_app/templates *
