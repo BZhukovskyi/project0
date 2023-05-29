@@ -8,9 +8,11 @@ python -m pip install Django
 ```
 2. Navigate to the folder where manage.py is located.
 3. Run the following commands to set up the app:
-```python manage.py makemigrations
+```
+python manage.py makemigrations
 python manage.py migrate
-python manage.py runserver```
+python manage.py runserver
+```
 4. Access the app through a web browser at http://localhost:8000/.
 
 ## Usage
